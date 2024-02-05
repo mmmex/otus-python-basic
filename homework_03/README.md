@@ -7,14 +7,37 @@
 
 #### Описание первого способа
 
-1. Скачиваем репозиторий: `git clone https://github.com/mmmex/otus-python-basic.git`
-2. Переходим в каталог `otus-python-basic` и Переключаемся на ветку `homework_03`: `cd otus-python-basic && git switch homework_03`
-3. Выполняем сборку образа: `docker build . -t mexis/otus:uvicorn-fastapi`
-4. Запуск образа: `docker run -p 8000:8000 mexis/otus:uvicorn-fastapi`
+1. Скачиваем репозиторий:
+
+```bash
+git clone https://github.com/mmmex/otus-python-basic.git
+```
+
+2. Переходим в каталог `otus-python-basic` и Переключаемся на ветку `homework_03`: 
+
+```bash
+cd otus-python-basic && git switch homework_03
+```
+
+3. Выполняем сборку образа: 
+
+```bash
+docker build . -t mexis/otus:uvicorn-fastapi
+```
+
+4. Запуск образа: 
+
+```bash
+docker run -p 8000:8000 mexis/otus:uvicorn-fastapi
+```
 
 #### Описание второго способа
 
-1. Просто запускаем контейнер: `docker run -p 8000:8000 mexis/otus:uvicorn-fastapi`
+1. Просто запускаем контейнер: 
+
+```bash
+docker run -p 8000:8000 mexis/otus:uvicorn-fastapi
+```
 
 ### Домашнее задание "Docker контейнер c веб-приложением"
 #### Задача:
